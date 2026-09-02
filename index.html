@@ -1,207 +1,228 @@
 <!DOCTYPE html>
-
 <html lang="es">
-
-
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Hernán Toledo | Portfolio</title>
-
- <link rel="stylesheet" href="styles.css">
-
- </head>
- 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Hernán Toledo, Analista de Datos y Desarrollador Python. Proyectos con Python, Pandas, SQL, Power BI y desarrollo web.">
+    <title>Hernán Toledo | Analista de Datos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
 <body>
-
- <nav>
-
-    <p>Hernán Toledo</p>
-
- <div class="nav-links">
-    <a href="#proyectos">Proyectos</a>
-    <a href="#sobre-mi">Mi camino</a>
-    <a href="#tecnologias">Tecnologías</a>
-    <a href="#contacto">Contacto</a>
-</div>
-
- </nav>
-
-
-    <section id="hero">
-
-    <div class="hero-contenido">
-
-        <h1>Hola, soy <span class="accent">Hernán.</span></h1>
-
-        <p>Analista de Datos · Desarrollador Python</p>
-
-        <p>Datos, código y soluciones para problemas reales.</p>
-
-        <div class="hero-links">
-            <a href="#proyectos">Ver proyectos</a>
-            <a href="#contacto">Ver contacto</a>
-            <a href="https://github.com/hernantoledo-dev" target="_blank">GitHub</a>
+    <nav class="nav-shell" aria-label="Navegación principal">
+        <a class="brand" href="#hero" aria-label="Ir al inicio">Hernán Toledo<span>.</span></a>
+        <div class="nav-links">
+            <a href="#proyectos">Proyectos</a>
+            <a href="#sobre-mi">Mi camino</a>
+            <a href="#tecnologias">Tecnologías</a>
+            <a href="#contacto">Contacto</a>
         </div>
+    </nav>
 
-    </div>
+    <main>
+        <section id="hero" class="hero section-shell">
+            <div class="hero-contenido">
+                <p class="eyebrow">Analista de Datos · Desarrollador Python</p>
+                <h1>Transformo datos y procesos en <span class="accent">soluciones claras.</span></h1>
+                <p class="hero-descripcion">
+                    Desarrollo proyectos donde combino análisis, programación y problemas reales para convertir información en decisiones y procesos más simples.
+                </p>
 
-    <div class="hero-stack">
-
-   <p class="stack-titulo">Stack principal</p>
-
-    <div class="stack-tags">
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Power BI</span>
-        <span>Git</span>
-    </div>
-
-</div>
-
-</section>
-
-
- <section id="proyectos">
-
-    <h2>Proyectos</h2>
-
-    <p>Datos, código y problemas reales.</p>
-
-    <div class="proyectos-grid">
-
-        <div class="proyecto">
-
-            <h3>Análisis del mercado de autos usados</h3>
-
-            <p>
-                Análisis de publicaciones de vehículos usados para estudiar
-                cómo influyen la antigüedad, el kilometraje y otras variables
-                sobre el precio.
-            </p>
-
-            <div class="proyecto-tags">
-                <span>Python</span>
-                <span>Pandas</span>
-                <span>Power BI</span>
+                <div class="hero-links">
+                    <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+                    <a class="btn btn-secondary" href="https://github.com/hernantoledo-dev" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                    <a class="btn btn-ghost" href="#contacto">Contacto</a>
+                </div>
             </div>
 
-            <a href="#" class="proyecto-link">Ver proyecto</a>
+            <aside class="hero-stack" aria-label="Stack principal">
+                <p class="stack-titulo">Stack principal</p>
+                <div class="stack-tags">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>SQL</span>
+                    <span>Power BI</span>
+                    <span>DAX</span>
+                    <span>Git</span>
+                </div>
+                <p class="stack-note">Enfoque: análisis de datos, automatización y mejora de procesos.</p>
+            </aside>
+        </section>
 
-        </div>
-<div class="proyecto">
+        <section id="proyectos" class="section-shell">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Trabajo aplicado</p>
+                    <h2>Proyectos</h2>
+                </div>
+                <p>Casos donde los datos y el código resuelven preguntas concretas.</p>
+            </div>
 
-    <h3>Talleres OS</h3>
+            <article class="proyecto proyecto-destacado">
+                <div class="proyecto-imagen-wrap">
+                    <img
+                        class="proyecto-imagen"
+                        src="https://raw.githubusercontent.com/hernantoledo-dev/analisis-autos-usados/main/images/01_resumen_mercado.png"
+                        alt="Dashboard de Power BI del análisis de autos usados en Argentina"
+                        loading="lazy"
+                    >
+                </div>
 
-    <p>
-        Sistema web de gestión para talleres orientado a organizar procesos,
-        seguimiento de vehículos y tareas administrativas.
-    </p>
+                <div class="proyecto-contenido">
+                    <div class="proyecto-topline">
+                        <span class="estado estado-listo">Proyecto publicado</span>
+                        <span class="proyecto-numero">01</span>
+                    </div>
+                    <h3>Análisis de Autos Usados en Argentina</h3>
+                    <p>
+                        Análisis exploratorio de 510 publicaciones de vehículos usados para estudiar la relación entre precio, kilometraje y antigüedad, y comparar publicaciones con vehículos similares.
+                    </p>
+                    <p class="proyecto-aporte">
+                        El proyecto incluye limpieza y transformación con Python/Pandas, nuevas variables, análisis de comparables por marca + año, medidas DAX y un dashboard de cuatro páginas en Power BI.
+                    </p>
 
-    <div class="proyecto-tags">
-        <span>Python</span>
-        <span>HTML</span>
-        <span>CSS</span>
-    </div>
+                    <div class="proyecto-tags">
+                        <span>Python</span>
+                        <span>Pandas</span>
+                        <span>Power BI</span>
+                        <span>DAX</span>
+                        <span>Power Query</span>
+                        <span>Git</span>
+                    </div>
 
-    <a href="#" class="proyecto-link">En desarrollo →</a>
+                    <div class="proyecto-links">
+                        <a class="btn btn-primary" href="https://github.com/hernantoledo-dev/analisis-autos-usados" target="_blank" rel="noopener noreferrer">Ver proyecto completo ↗</a>
+                    </div>
+                </div>
+            </article>
 
-</div> 
-    </div>
+            <div class="proyectos-grid secundarios">
+                <article class="proyecto proyecto-secundario">
+                    <div class="proyecto-topline">
+                        <span class="estado estado-proceso">En desarrollo</span>
+                        <span class="proyecto-numero">02</span>
+                    </div>
+                    <h3>Talleres OS</h3>
+                    <p>
+                        Sistema web de gestión orientado a talleres para ordenar procesos, seguimiento de vehículos y tareas administrativas en un único flujo de trabajo.
+                    </p>
+                    <div class="proyecto-tags">
+                        <span>Python</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+                    <p class="proyecto-link-muted">Proyecto en construcción</p>
+                </article>
 
-</section>
+                <article class="proyecto proyecto-secundario proyecto-proximo">
+                    <div class="proyecto-topline">
+                        <span class="estado">Próximo proyecto</span>
+                        <span class="proyecto-numero">03</span>
+                    </div>
+                    <h3>Próximo análisis</h3>
+                    <p>
+                        Este espacio se incorporará con el siguiente proyecto de datos, manteniendo el portfolio enfocado en trabajos terminados y explicables.
+                    </p>
+                    <div class="proyecto-tags">
+                        <span>Data Analysis</span>
+                        <span>Python</span>
+                        <span>BI</span>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-<section id="sobre-mi">
+        <section id="sobre-mi" class="section-shell">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Perfil</p>
+                    <h2>Mi camino hasta acá</h2>
+                </div>
+            </div>
 
-    <h2>Mi camino hasta acá</h2>
+            <div class="sobre-mi-grid">
+                <div class="sobre-mi-contenido">
+                    <p>
+                        Mi recorrido profesional comenzó en atención al cliente y continuó en la gestión y organización de procesos dentro de un taller. Trabajar cerca de problemas operativos reales despertó mi interés por ordenar información, automatizar tareas y encontrar mejores formas de trabajar.
+                    </p>
+                    <p>
+                        Actualmente estudio Análisis de Datos e Inteligencia Artificial y construyo proyectos que conectan esa experiencia con Python, análisis de datos y herramientas de visualización.
+                    </p>
+                    <p>
+                        Busco seguir creciendo en un entorno donde pueda aportar organización, pensamiento analítico, capacidad de aprendizaje y una mirada práctica sobre los procesos.
+                    </p>
+                </div>
 
-    <div class="sobre-mi-contenido">
+                <div class="principios" aria-label="Cómo trabajo">
+                    <div>
+                        <span>01</span>
+                        <p>Entender el problema antes de elegir la herramienta.</p>
+                    </div>
+                    <div>
+                        <span>02</span>
+                        <p>Trabajar con datos claros, trazables y explicables.</p>
+                    </div>
+                    <div>
+                        <span>03</span>
+                        <p>Convertir resultados técnicos en información útil.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-        <p>
-            Mi recorrido profesional comenzó lejos del mundo de los datos y la programación,
-            trabajando en atención al cliente y posteriormente en la gestión y organización
-            de procesos dentro de un taller.
-        </p>
+        <section id="tecnologias" class="section-shell">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Herramientas</p>
+                    <h2>Tecnologías que utilizo</h2>
+                </div>
+                <p>Herramientas incorporadas durante mi formación y aplicadas en proyectos.</p>
+            </div>
 
-        <p>
-            Esa experiencia me llevó a interesarme cada vez más por encontrar formas de
-            organizar información, automatizar tareas y resolver problemas mediante tecnología.
-        </p>
+            <div class="tecnologias-grid">
+                <div class="tecnologia">
+                    <p class="tecnologia-kicker">Datos</p>
+                    <h3>Análisis y transformación</h3>
+                    <p>Python · Pandas · NumPy · SQL</p>
+                </div>
 
-        <p>
-            Actualmente estudio Análisis de Datos e Inteligencia Artificial y desarrollo
-            proyectos donde combino programación, análisis y situaciones reales.
-        </p>
+                <div class="tecnologia">
+                    <p class="tecnologia-kicker">Business Intelligence</p>
+                    <h3>Visualización</h3>
+                    <p>Power BI · DAX · Power Query</p>
+                </div>
 
-    </div>
+                <div class="tecnologia">
+                    <p class="tecnologia-kicker">Desarrollo</p>
+                    <h3>Web y programación</h3>
+                    <p>Python · HTML · CSS</p>
+                </div>
 
-</section>
+                <div class="tecnologia">
+                    <p class="tecnologia-kicker">Flujo de trabajo</p>
+                    <h3>Versionado y entorno</h3>
+                    <p>Git · GitHub · VS Code</p>
+                </div>
+            </div>
+        </section>
 
-<section id="tecnologias">
+        <section id="contacto" class="section-shell contacto-section">
+            <div class="contacto-card">
+                <p class="eyebrow">Contacto</p>
+                <h2>¿Hablamos?</h2>
+                <p>Estoy abierto a oportunidades donde pueda seguir creciendo y aportar desde los datos, Python y la mejora de procesos.</p>
 
-    <h2>Tecnologías y herramientas</h2>
+                <div class="contacto-links">
+                    <a class="btn btn-primary" href="mailto:hernannahuelt@gmail.com">Email</a>
+                    <a class="btn btn-secondary" href="https://www.linkedin.com/in/hernan-nahuel-toledo-a38672225/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+                    <a class="btn btn-secondary" href="https://github.com/hernantoledo-dev" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <p>
-        Tecnologías y herramientas que fui incorporando durante mi formación
-        y el desarrollo de proyectos.
-    </p>
-
-    <div class="tecnologias-grid">
-
-        <div class="tecnologia">
-            <h3>Datos</h3>
-            <p>Python · Pandas · NumPy · SQL · Power BI</p>
-        </div>
-
-        <div class="tecnologia">
-            <h3>Desarrollo</h3>
-            <p>Python · HTML · CSS</p>
-        </div>
-
-        <div class="tecnologia">
-            <h3>Herramientas</h3>
-            <p>Git · GitHub · VS Code</p>
-        </div>
-
-    </div>
-
-</section>
-
-<section id="contacto">
-
-    <h2>Contacto</h2>
-
-    <p>
-        ¿Querés conocer más sobre mi trabajo o ponerte en contacto conmigo?
-    </p>
-
-    <div class="contacto-links">
-
-        <a href="mailto:hernannahuelt@gmail.com">Email</a>
-
-        <a href="https://www.linkedin.com/in/hernan-nahuel-toledo-a38672225/"
-           target="_blank">
-            LinkedIn
-        </a>
-
-        <a href="https://github.com/hernantoledo-dev"
-           target="_blank">
-            GitHub
-        </a>
-
-    </div>
-
-</section>
-
-<footer>
-
-    <p>© 2026 Hernán Toledo</p>
-
-    <p>Hecho con HTML, CSS y Git.</p>
-
-</footer>
-
+    <footer>
+        <p>© 2026 Hernán Toledo</p>
+        <p>Portfolio construido con HTML, CSS y Git.</p>
+    </footer>
 </body>
-
-
 </html>
